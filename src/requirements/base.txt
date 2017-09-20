@@ -9,7 +9,7 @@ django-admin-bootstrapped==2.5.7
 django-authtools==1.6.0
 django-braces==1.11.0
 django-crispy-forms==1.6.1
-django-debug-toolbar==1.8
+#django-debug-toolbar==1.8
 django-environ==0.4.4
 django-filer==1.2.8
 django-mptt==0.8.7
