@@ -1,0 +1,53 @@
+{% extends "_layout/base.html" %}
+{% load crispy_forms_tags %}
+
+ {% block whoweare %}
+ {% endblock whoweare %}
+
+ {% block supervisorycommittee %}
+ {% endblock supervisorycommittee %}
+
+ {% block executivecommittee %}
+ {% endblock executivecommittee %}
+<!-- Start Team Member Section -->
+        <!--- Start Table of members-->
+        {% block members %}
+
+          {% endblock members %}
+        {% block successstories %}
+        {% endblock successstories %}
+        <!-- End table of members-->
+
+        {% block chairpersonremarks %}
+
+          {% endblock chairpersonremarks %}
+
+          {% block us %}
+
+          {% endblock us %}
+
+          {% block ourvision %}
+
+          {% endblock ourvision %}
+
+          {% block ourmainobjective %}
+
+          {% endblock ourmainobjective %}
+
+          {% block ourteam %}
+
+          {% endblock ourteam %}
+
+          {% block careers %}
+
+          {% endblock careers %}
+
+          {% block contactus %}
+          <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    {% crispy form %}
+                </div>
+            </div>
+        </div>
+          {% endblock contactus %}

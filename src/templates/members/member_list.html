@@ -1,0 +1,57 @@
+{% extends "_layout/base.html" %}
+
+
+ {% block whoweare %}
+ {% endblock whoweare %}
+
+<!--  {% block supervisorycommittee %}
+ {% endblock supervisorycommittee %} -->
+
+ {% block executivecommittee %}
+ {% endblock executivecommittee %}
+<!-- Start Team Member Section -->
+        <!--- Start Table of members-->
+        {% block members %}
+        <div class="heading">
+              <div class="section-title">MEMBER <span>LIST</span></div>
+            </div>
+         <div class="company-ever">
+          <div class="container">
+            <div class="row company-bg">
+              <div class="col-md-8"><br>
+                <table class="table table-condensed table-bordered">
+                  <thead>
+                    <tr class="bg-success">
+                      <th>Name</th>
+                      <th>Position</th>
+                      <th>Organization</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  {% for member in object_list %}
+                    <tr class="bg-warning">
+                      <td>{{ member.name }}</td>
+                      <td>{{ member.position }}</td>
+                      <td>{{ member.organization }}</td>
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="col-md-4 text-justify">
+                <br>
+                    <blockquote>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                      when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                      It has survived not only five centuries.
+                    </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endblock members %}
+        {% block successstories %}
+        {% endblock successstories %}
+        <!-- End table of members-->

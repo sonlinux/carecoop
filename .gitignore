@@ -1,0 +1,111 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Packaging files:
+*.egg*
+
+# Sphinx docs:
+build
+
+# SQLite3 database files:
+*.db
+*.sqlite3
+*.sqlite
+
+# Logs:
+*.log
+
+# Environment variables
+local.env
+
+# Django stuff:
+*.mo
+*.pot
+
+# Eclipse
+.project
+.pydevproject
+.settings
+
+# Linux Editors
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+.elc
+auto-save-list
+tramp
+.\#*
+*.swp
+*.swo
+
+# Rope
+.ropeproject
+
+# Mac
+.DS_Store
+._*
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Project settings
+./site/
+# Generic files
+*~
+*.lock
+*.out
+# OS specific files
+.DS_Store
+.db.sqlite3
+# Vim
+.*.swp
+.*.swo
+# Emacs
+.emacs-project
+\#.#
+*/.#*
+\#*
+.#*
+*~
+*.idea
+# Komodo
+*.komodoproject
+# Python-specific
+*.log
+*.py[co]
+# Virtualenv-specific
+env/
+# Django-specific
+local_settings.py
+media/*
+#static/admin
+#static/admin_tools
+*.pot
+# Python packages-specific
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+# pip-specific
+pip-log.txt
+# Unit test / coverage reports
+.coverage
+.tox
+# SQLite-specific
+*.sqlite3
+# Whoosh
+data/index.whoosh

@@ -1,0 +1,166 @@
+{% extends "_layout/base.html" %}
+
+ {% block whoweare %}
+ {% endblock whoweare %}
+
+ {% block supervisorycommittee %}
+ {% endblock supervisorycommittee %}
+
+ {% block executivecommittee %}
+ {% endblock executivecommittee %}
+<!-- Start Team Member Section -->
+        <!--- Start Table of members-->
+        {% block members %}
+
+          {% endblock members %}
+        {% block successstories %}
+        {% endblock successstories %}
+        <!-- End table of members-->
+
+        {% block chairpersonremarks %}
+        <div class="heading">
+              <div class="section-title">CHAIRPERSON'S <span>REMARKS</span></div>
+            </div>
+
+            {% for remark in chairpersonsremarks %}
+               <div class="company-ever">
+                <div class="container">
+                  <div class="row company-bg">
+                    <div class="col-md-12"><br>
+                    </div>
+
+                    <div class="col-md-12 text-justify">
+                      <br>
+                          <blockquote>
+                            {{ remark.remarks }}
+                          </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+          {% endblock chairpersonremarks %}
+
+          {% block us %}
+           <div class="heading">
+              <div class="section-title">WHO <span>WE ARE</span></div>
+            </div>
+
+            {% for whoweare in whoweare %}
+               <div class="company-ever">
+                <div class="container">
+                  <div class="row company-bg">
+                    <div class="col-md-12"><br>
+                    </div>
+
+                    <div class="col-md-12 text-justify">
+                      <br>
+                          <blockquote>
+                            {{ whoweare.who_we_are }}
+                          </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+          {% endblock us %}
+
+          {% block ourvision %}
+             <div class="heading">
+              <div class="section-title">OUR <span>VISION</span></div>
+            </div>
+
+            {% for vision in ourvision %}
+               <div class="company-ever">
+                <div class="container">
+                  <div class="row company-bg">
+                    <div class="col-md-12"><br>
+                    </div>
+
+                    <div class="col-md-12 text-justify">
+                      <br>
+                          <blockquote>
+                            {{ vision.vision }}
+                          </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+          {% endblock ourvision %}
+
+          {% block ourmainobjective %}
+             <div class="heading">
+              <div class="section-title">OUR MAIN <span>OBJECTIVE</span></div>
+            </div>
+
+            {% for objective in ourmainobjective %}
+               <div class="company-ever">
+                <div class="container">
+                  <div class="row company-bg">
+                    <div class="col-md-12"><br>
+                    </div>
+
+                    <div class="col-md-12 text-justify">
+                      <br>
+                          <blockquote>
+                            {{ objective.objective }}
+                          </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+          {% endblock ourmainobjective %}
+
+          {% block ourteam %}
+             <div class="heading">
+              <div class="section-title">OUR <span>TEAM</span></div>
+            </div>
+
+            {% for team in ourteam %}
+               <div class="company-ever">
+                <div class="container">
+                  <div class="row company-bg">
+                    <div class="col-md-12"><br>
+                    </div>
+
+                    <div class="col-md-12 text-justify">
+                      <br>
+                          <blockquote>
+                            {{ team.team }}
+                          </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+          {% endblock ourteam %}
+
+          {% block careers %}
+             <div class="heading">
+              <div class="section-title">CAR <span>EERS</span></div>
+            </div>
+
+            {% for career in careers %}
+               <div class="company-ever">
+                <div class="container">
+                  <div class="row company-bg">
+                    <div class="col-md-12"><br>
+                    </div>
+
+                    <div class="col-md-12 text-justify">
+                      <br>
+                          <blockquote>
+                            {{ career.caree }}
+                          </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+          {% endblock careers %}
+
+          {% block contactus %}
+
+          {% endblock contactus %}
