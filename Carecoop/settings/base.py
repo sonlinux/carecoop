@@ -12,6 +12,7 @@ from os.path import dirname, join, exists
 
 # Build paths inside the project like this: join(BASE_DIR, "directory")
 BASE_DIR = dirname(dirname(dirname(__file__)))
+STATICFILES_DIRS = [join(BASE_DIR, 'static')]
 MEDIA_ROOT = join(BASE_DIR, 'media')
 MEDIA_URL = "/media/"
 
@@ -69,8 +70,8 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
+    # 'whitenoise.runserver_nostatic',
 
     'authtools',
     'crispy_forms',
@@ -140,7 +141,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # STATIC_ROOT = join(BASE_DIR, 'static')
-STATICFILES_DIRS = [join(BASE_DIR, 'static')]
 
 ALLOWED_HOSTS = []
 
