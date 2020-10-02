@@ -1,4 +1,4 @@
-# Carecoop
+# Carecoop An Amazing Project
 
 Carecoop is a _short description_. It is built with [Python][0] using the [Django Web Framework][1].
 
